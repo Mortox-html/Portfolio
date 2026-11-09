@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tramo · Ropa para moverte por la ciudad</title>
+  <meta name="description" content="Tramo es una tienda de ropa de demostración: camisetas, sudaderas, pantalones y accesorios.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-bar">Web de demostración. <a href="../../index.html">Volver al portfolio</a></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Tramo, inicio">TRAMO</a>
+    <nav aria-label="Principal">
+      <a href="#coleccion">Colección</a>
+      <a href="#envios">Envíos</a>
+      <a href="#boletin">Boletín</a>
+    </nav>
+    <button class="cart-btn" id="open-cart" type="button" aria-controls="cart">
+      Carrito <span class="cart-count" id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__text">
+        <h1>Ropa para moverte por la ciudad</h1>
+        <p>Prendas pesadas, cortes rectos y colores que combinan entre sí. Hechas en lotes pequeños.</p>
+        <a class="btn" href="#coleccion">Ver la colección</a>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <div class="hero__shape" id="hero-shape"></div>
+        <div class="sticker"><span>Envío gratis desde 60 €</span></div>
+      </div>
+    </section>
+
+    <section class="perks" id="envios" aria-label="Condiciones de compra">
+      <ul>
+        <li><strong>Envío en 24 a 48 horas</strong> A toda la península. Gratis desde 60 €.</li>
+        <li><strong>30 días para devolver</strong> Si no te encaja, la recogemos sin coste.</li>
+        <li><strong>Pago seguro</strong> Con tarjeta, Bizum o transferencia.</li>
+      </ul>
+    </section>
+
+    <section class="collection" id="coleccion" aria-labelledby="t-coleccion">
+      <div class="collection__head">
+        <h2 id="t-coleccion">Colección</h2>
+        <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+      </div>
+      <div class="grid" id="grid" aria-live="polite"></div>
+    </section>
+
+    <section class="boletin" id="boletin" aria-labelledby="t-boletin">
+      <h2 id="t-boletin">Entérate de cada reposición</h2>
+      <form id="news-form" novalidate>
+        <label for="news-email">Correo electrónico</label>
+        <div class="boletin__row">
+          <input id="news-email" name="email" type="email" autocomplete="email" required>
+          <button class="btn" type="submit">Apuntarme</button>
+        </div>
+        <p class="form-msg" id="news-msg" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>TRAMO</strong> Proyecto de demostración. Los productos, precios y condiciones son ficticios.</p>
+    <p><a href="../../index.html">Volver al portfolio</a></p>
+  </footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart" id="cart" aria-labelledby="cart-title" inert>
+    <div class="cart__head">
+      <h2 id="cart-title">Tu carrito</h2>
+      <button class="icon-btn" id="close-cart" type="button">Cerrar</button>
+    </div>
+    <div class="ship">
+      <p id="ship-text"></p>
+      <div class="bar" aria-hidden="true"><span id="ship-bar"></span></div>
+    </div>
+    <ul class="cart__list" id="cart-list"></ul>
+    <p class="cart__empty" id="cart-empty">Tu carrito está vacío. Añade algo de la colección.</p>
+    <dl class="totals">
+      <div><dt>Subtotal</dt><dd id="t-sub">0,00 €</dd></div>
+      <div><dt>Envío</dt><dd id="t-ship">0,00 €</dd></div>
+      <div class="totals__total"><dt>Total</dt><dd id="t-total">0,00 €</dd></div>
+    </dl>
+    <button class="btn btn--block" id="checkout" type="button">Finalizar compra</button>
+    <p class="form-msg" id="cart-msg" role="status"></p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

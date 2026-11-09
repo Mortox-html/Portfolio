@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Nombre · Desarrollador y diseñador web</title>
+  <meta name="description" content="Portfolio de desarrollo y diseño web: una tienda de ropa, un restaurante y una web de empresa, hechas con HTML, CSS y JavaScript.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header wrap">
+    <a class="brand" href="#inicio">Tu Nombre</a>
+    <nav aria-label="Principal">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero wrap" id="inicio">
+      <h1>Hago webs para tiendas, restaurantes y empresas.</h1>
+      <p class="lead">Soy desarrollador y diseñador web junior. Escribo HTML, CSS y JavaScript a mano, y cada proyecto de este portfolio tiene su propio diseño.</p>
+      <div class="actions">
+        <a class="btn" href="#proyectos">Ver los proyectos</a>
+        <a class="link" href="#contacto">Escríbeme</a>
+      </div>
+    </section>
+
+    <section class="projects" id="proyectos" aria-labelledby="t-proyectos">
+      <div class="wrap">
+        <h2 id="t-proyectos">Tres webs, tres sectores</h2>
+        <p class="projects__intro">Cada web tiene su propia paleta y su propia forma de organizar la información.</p>
+
+        <div class="project-list">
+          <article class="project" data-bg="#EDEDEA" data-fg="#14142B">
+            <div class="project__main">
+              <h3><a href="proyectos/moda/index.html">Tramo</a></h3>
+              <p class="project__type">Tienda de ropa online</p>
+            </div>
+            <div class="project__body">
+              <p>Catálogo con filtros por categoría, selector de color y talla, y carrito con aviso de envío gratis a partir de 60 €.</p>
+              <p class="project__tech">HTML5, CSS3, JavaScript y localStorage</p>
+              <span class="project__cta" aria-hidden="true">Ver la web</span>
+            </div>
+            <ul class="swatches" aria-label="Paleta de colores">
+              <li style="background:#EDEDEA"></li>
+              <li style="background:#14142B"></li>
+              <li style="background:#2B3BFF"></li>
+            </ul>
+          </article>
+
+          <article class="project" data-bg="#16261D" data-fg="#EAF0E2">
+            <div class="project__main">
+              <h3><a href="proyectos/restaurante/index.html">Casa Brasa</a></h3>
+              <p class="project__type">Restaurante de cocina a la brasa</p>
+            </div>
+            <div class="project__body">
+              <p>Carta por pestañas, aviso de abierto o cerrado según la hora y formulario de reserva con validación.</p>
+              <p class="project__tech">HTML5, CSS3 y JavaScript</p>
+              <span class="project__cta" aria-hidden="true">Ver la web</span>
+            </div>
+            <ul class="swatches" aria-label="Paleta de colores">
+              <li style="background:#16261D"></li>
+              <li style="background:#EAF0E2"></li>
+              <li style="background:#F0A530"></li>
+            </ul>
+          </article>
+
+          <article class="project" data-bg="#0E2A47" data-fg="#FFFFFF">
+            <div class="project__main">
+              <h3><a href="proyectos/empresa/index.html">Calibra</a></h3>
+              <p class="project__type">Consultora para empresas</p>
+            </div>
+            <div class="project__body">
+              <p>Calculadora de ahorro interactiva, servicios, método de trabajo y formulario de contacto.</p>
+              <p class="project__tech">HTML5, CSS3 y JavaScript</p>
+              <span class="project__cta" aria-hidden="true">Ver la web</span>
+            </div>
+            <ul class="swatches" aria-label="Paleta de colores">
+              <li style="background:#0E2A47"></li>
+              <li style="background:#F3F6F9"></li>
+              <li style="background:#17B3B3"></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about wrap" id="sobre-mi" aria-labelledby="t-sobre">
+      <h2 id="t-sobre">Sobre mí</h2>
+      <div class="about__grid">
+        <div>
+          <!-- EDITA: reemplaza estos párrafos por tu propia presentación -->
+          <p>Soy desarrollador y diseñador web junior. Trabajo con HTML5, CSS3 y JavaScript, y me preocupo de que cada web sea clara, rápida y se vea bien en el móvil.</p>
+          <p>Para este portfolio he diseñado tres webs de ejemplo desde cero, cada una pensada para un tipo de cliente distinto.</p>
+        </div>
+        <ul class="skills">
+          <li>HTML5 semántico</li>
+          <li>CSS3 con Grid, Flexbox y variables</li>
+          <li>JavaScript sin frameworks</li>
+          <li>Diseño adaptable a móvil</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contacto" aria-labelledby="t-contacto">
+      <h2 id="t-contacto">¿Hablamos?</h2>
+      <p>Cuéntame qué necesitas y lo vemos.</p>
+      <!-- EDITA: pon aquí tu correo real -->
+      <a class="mail" href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>© <span id="year">2026</span> Tu Nombre</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

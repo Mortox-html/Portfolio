@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calibra · Consultoría de procesos para empresas</title>
+  <meta name="description" content="Calibra es una consultora de demostración que ayuda a pymes a ordenar procesos y automatizar tareas repetitivas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-bar">Web de demostración. <a href="../../index.html">Volver al portfolio</a></div>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="logo" href="#top">Calibra</a>
+      <nav aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Método</a>
+        <a href="#casos">Casos</a>
+        <a class="btn btn--small" href="#contacto">Pedir diagnóstico</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <h1>Menos horas perdidas en tareas manuales</h1>
+          <p>Calibra ayuda a pymes a ordenar sus procesos y a automatizar lo repetitivo, sin cambiar de herramientas de un día para otro.</p>
+          <a class="btn" href="#contacto">Pedir un diagnóstico</a>
+        </div>
+
+        <div class="calc" role="group" aria-labelledby="calc-title">
+          <h2 id="calc-title">¿Cuánto cuesta hoy el trabajo manual?</h2>
+
+          <div class="field">
+            <label for="emp">Personas en el equipo <output for="emp" id="emp-out">40</output></label>
+            <input id="emp" type="range" min="5" max="300" step="5" value="40">
+          </div>
+          <div class="field">
+            <label for="hrs">Horas por semana y persona en tareas repetitivas <output for="hrs" id="hrs-out">6 h</output></label>
+            <input id="hrs" type="range" min="1" max="20" step="1" value="6">
+          </div>
+          <div class="field">
+            <label for="cost">Coste por hora <output for="cost" id="cost-out">22 €</output></label>
+            <input id="cost" type="range" min="10" max="60" step="1" value="22">
+          </div>
+
+          <div class="calc__result">
+            <p class="calc__label">Ahorro estimado al año</p>
+            <p class="calc__big" id="saving" aria-live="polite">0 €</p>
+            <p class="calc__small" id="hours-saved"></p>
+          </div>
+          <p class="calc__note">Estimación orientativa: supone reducir un 35 % el tiempo de estas tareas y 46 semanas laborables al año.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="servicios" aria-labelledby="t-servicios">
+      <div class="wrap">
+        <h2 id="t-servicios">Qué hacemos</h2>
+        <ul class="services">
+          <li>
+            <h3>Diagnóstico de procesos</h3>
+            <p>Medimos dónde se va el tiempo del equipo y qué tareas se repiten cada semana. Entregamos un informe con prioridades y el ahorro estimado de cada una.</p>
+          </li>
+          <li>
+            <h3>Automatización</h3>
+            <p>Conectamos las herramientas que ya usas, como hojas de cálculo, facturación y correo, para que los datos dejen de copiarse a mano.</p>
+          </li>
+          <li>
+            <h3>Formación del equipo</h3>
+            <p>Enseñamos a tu equipo a mantener los procesos nuevos, para que no dependan de nosotros.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="metodo" aria-labelledby="t-metodo">
+      <div class="wrap">
+        <h2 id="t-metodo">Cómo trabajamos</h2>
+        <ol class="steps">
+          <li>
+            <h3>Escuchamos</h3>
+            <p>Hablamos con quien hace el trabajo cada día, no solo con la dirección.</p>
+            <p class="steps__time">Semana 1</p>
+          </li>
+          <li>
+            <h3>Medimos</h3>
+            <p>Registramos tiempos reales de las tareas que más se repiten.</p>
+            <p class="steps__time">Semanas 2 y 3</p>
+          </li>
+          <li>
+            <h3>Automatizamos</h3>
+            <p>Empezamos por lo que más ahorra y menos cambia la rutina del equipo.</p>
+            <p class="steps__time">Semanas 4 a 6</p>
+          </li>
+          <li>
+            <h3>Acompañamos</h3>
+            <p>Revisamos resultados y ajustamos lo que no funcione como esperábamos.</p>
+            <p class="steps__time">Cada mes</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="casos" aria-labelledby="t-casos">
+      <div class="wrap">
+        <h2 id="t-casos">Resultados de ejemplo</h2>
+        <ul class="cases">
+          <li>
+            <p class="cases__num">−38 %</p>
+            <div>
+              <h3>Tiempo de facturación mensual</h3>
+              <p>Distribuidora de material eléctrico, 45 personas.</p>
+            </div>
+          </li>
+          <li>
+            <p class="cases__num">−12 h</p>
+            <div>
+              <h3>A la semana conciliando pedidos</h3>
+              <p>Empresa de logística, 28 personas.</p>
+            </div>
+          </li>
+          <li>
+            <p class="cases__num">−60 %</p>
+            <div>
+              <h3>Errores al introducir datos</h3>
+              <p>Despacho de gestión, 12 personas.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="cases__note">Casos ficticios creados para esta demostración.</p>
+      </div>
+    </section>
+
+    <section class="section section--light" id="contacto" aria-labelledby="t-contacto">
+      <div class="wrap contact__grid">
+        <div>
+          <h2 id="t-contacto">Pide un diagnóstico</h2>
+          <p class="contact__text">Cuéntanos cómo trabaja tu equipo y qué tareas se te hacen más pesadas. Te proponemos por dónde empezar.</p>
+        </div>
+
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="c-name">Nombre</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" aria-describedby="err-c-name">
+            <span class="error" id="err-c-name"></span>
+          </div>
+          <div class="field">
+            <label for="c-email">Correo electrónico</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" aria-describedby="err-c-email">
+            <span class="error" id="err-c-email"></span>
+          </div>
+          <div class="field">
+            <label for="c-size">Tamaño de la empresa</label>
+            <select id="c-size" name="size" aria-describedby="err-c-size">
+              <option value="">Elige una opción</option>
+              <option>De 1 a 10 personas</option>
+              <option>De 11 a 50 personas</option>
+              <option>De 51 a 250 personas</option>
+              <option>Más de 250 personas</option>
+            </select>
+            <span class="error" id="err-c-size"></span>
+          </div>
+          <div class="field">
+            <label for="c-msg">¿Qué te gustaría mejorar?</label>
+            <textarea id="c-msg" name="message" rows="4" aria-describedby="err-c-msg"></textarea>
+            <span class="error" id="err-c-msg"></span>
+          </div>
+          <button class="btn" type="submit">Enviar solicitud</button>
+          <p class="confirm" id="contact-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p>Calibra. Proyecto de demostración: la empresa, los casos y los datos son ficticios.</p>
+      <p><a href="../../index.html">Volver al portfolio</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

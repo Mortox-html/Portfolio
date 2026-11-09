@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Brasa · Cocina a la brasa</title>
+  <meta name="description" content="Casa Brasa es un restaurante de demostración: carta, horario y reservas online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&family=Figtree:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-bar">Web de demostración. <a href="../../index.html">Volver al portfolio</a></div>
+
+  <header class="site-header wrap">
+    <a class="logo" href="#top">Casa Brasa</a>
+    <nav aria-label="Principal">
+      <a href="#carta">Carta</a>
+      <a href="#visitanos">Horario</a>
+      <a class="btn btn--small" href="#reservar">Reservar</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero__text">
+        <h1>Cocina a la brasa y mesa larga</h1>
+        <p>Producto de mercado, fuego de encina y sobremesa sin prisa.</p>
+        <p class="status" id="status-hero" role="status"></p>
+        <div class="actions">
+          <a class="btn" href="#reservar">Reservar mesa</a>
+          <a class="link" href="#carta">Ver la carta</a>
+        </div>
+      </div>
+
+      <aside class="board" aria-labelledby="t-board">
+        <h2 id="t-board">Hoy en la brasa</h2>
+        <ul class="menu-list">
+          <li><span class="menu-list__name">Costilla de cerdo ibérico</span><span class="dots" aria-hidden="true"></span><span class="price">14,50 €</span></li>
+          <li><span class="menu-list__name">Pulpo con patata ahumada</span><span class="dots" aria-hidden="true"></span><span class="price">18,00 €</span></li>
+          <li><span class="menu-list__name">Verduras de temporada</span><span class="dots" aria-hidden="true"></span><span class="price">11,00 €</span></li>
+          <li><span class="menu-list__name">Pescado del día</span><span class="dots" aria-hidden="true"></span><span class="price">Según mercado</span></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section wrap" id="carta" aria-labelledby="t-carta">
+      <h2 id="t-carta">La carta</h2>
+
+      <div class="tabs" role="tablist" aria-label="Secciones de la carta">
+        <button class="tab" role="tab" id="tab-entrantes" aria-controls="panel-entrantes" aria-selected="true" type="button">Entrantes</button>
+        <button class="tab" role="tab" id="tab-brasa" aria-controls="panel-brasa" aria-selected="false" tabindex="-1" type="button">A la brasa</button>
+        <button class="tab" role="tab" id="tab-postres" aria-controls="panel-postres" aria-selected="false" tabindex="-1" type="button">Postres</button>
+        <button class="tab" role="tab" id="tab-bebidas" aria-controls="panel-bebidas" aria-selected="false" tabindex="-1" type="button">Bebidas</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-entrantes" aria-labelledby="tab-entrantes" tabindex="0">
+        <ul class="dishes">
+          <li><p class="dish__row"><span class="dish__name">Pan de cristal con tomate</span><span class="dots" aria-hidden="true"></span><span class="price">4,50 €</span></p><p class="dish__desc">Tomate rallado, aceite de oliva y sal en escamas.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Croquetas de rustido</span><span class="dots" aria-hidden="true"></span><span class="price">9,00 €</span></p><p class="dish__desc">Seis unidades, con el caldo de la olla del día.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Alcachofas a la brasa</span><span class="dots" aria-hidden="true"></span><span class="price">12,00 €</span></p><p class="dish__desc">Con salsa romesco y almendra tostada.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Tomate y ventresca</span><span class="dots" aria-hidden="true"></span><span class="price">13,50 €</span></p><p class="dish__desc">Tomate de temporada, cebolleta y atún en aceite.</p></li>
+        </ul>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-brasa" aria-labelledby="tab-brasa" tabindex="0" hidden>
+        <ul class="dishes">
+          <li><p class="dish__row"><span class="dish__name">Entrecot de ternera</span><span class="dots" aria-hidden="true"></span><span class="price">24,00 €</span></p><p class="dish__desc">300 gramos, con patatas y pimientos asados.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Costilla de cerdo ibérico</span><span class="dots" aria-hidden="true"></span><span class="price">14,50 €</span></p><p class="dish__desc">Cocinada despacio y terminada sobre la brasa.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Pollo de corral</span><span class="dots" aria-hidden="true"></span><span class="price">16,00 €</span></p><p class="dish__desc">Marinado con ajo y limón, medio pollo.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Dorada a la brasa</span><span class="dots" aria-hidden="true"></span><span class="price">19,50 €</span></p><p class="dish__desc">Entera, con aceite de hierbas.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Verduras de temporada</span><span class="dots" aria-hidden="true"></span><span class="price">11,00 €</span></p><p class="dish__desc">Según lo que llegue del mercado esa mañana.</p></li>
+        </ul>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-postres" aria-labelledby="tab-postres" tabindex="0" hidden>
+        <ul class="dishes">
+          <li><p class="dish__row"><span class="dish__name">Crema catalana</span><span class="dots" aria-hidden="true"></span><span class="price">6,00 €</span></p><p class="dish__desc">Quemada al momento con un hierro caliente.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Torrija con helado de canela</span><span class="dots" aria-hidden="true"></span><span class="price">7,00 €</span></p><p class="dish__desc">Pan brioche caramelizado en la brasa.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Fruta asada con miel</span><span class="dots" aria-hidden="true"></span><span class="price">5,50 €</span></p><p class="dish__desc">Fruta de temporada y yogur.</p></li>
+        </ul>
+      </div>
+
+      <div class="panel" role="tabpanel" id="panel-bebidas" aria-labelledby="tab-bebidas" tabindex="0" hidden>
+        <ul class="dishes">
+          <li><p class="dish__row"><span class="dish__name">Vino de la casa, copa</span><span class="dots" aria-hidden="true"></span><span class="price">3,50 €</span></p><p class="dish__desc">Tinto joven o blanco seco.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Cerveza artesana</span><span class="dots" aria-hidden="true"></span><span class="price">3,80 €</span></p><p class="dish__desc">Rubia de barril, caña o tercio.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Vermut de grifo</span><span class="dots" aria-hidden="true"></span><span class="price">3,20 €</span></p><p class="dish__desc">Con hielo, naranja y aceituna.</p></li>
+          <li><p class="dish__row"><span class="dish__name">Agua</span><span class="dots" aria-hidden="true"></span><span class="price">2,00 €</span></p><p class="dish__desc">Con o sin gas.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section visit" id="visitanos" aria-labelledby="t-visita">
+      <div class="wrap visit__grid">
+        <div>
+          <h2 id="t-visita">Horario</h2>
+          <p class="status" id="status-visit"></p>
+          <table class="hours">
+            <caption class="sr">Horario de apertura</caption>
+            <tbody>
+              <tr data-days="1"><th scope="row">Lunes</th><td>Cerrado</td></tr>
+              <tr data-days="2,3,4"><th scope="row">Martes a jueves</th><td>13:00 a 16:00 y 20:00 a 23:00</td></tr>
+              <tr data-days="5,6"><th scope="row">Viernes y sábado</th><td>13:00 a 16:30 y 20:00 a 00:00</td></tr>
+              <tr data-days="0"><th scope="row">Domingo</th><td>13:00 a 17:00</td></tr>
+            </tbody>
+          </table>
+          <p class="address">Calle Mayor 12<br>Teléfono 900 000 000</p>
+        </div>
+
+        <div id="reservar" class="booking-wrap">
+          <h2>Reservar mesa</h2>
+          <form id="booking" novalidate>
+            <div class="field">
+              <label for="name">Nombre</label>
+              <input id="name" name="name" type="text" autocomplete="name" aria-describedby="err-name">
+              <span class="error" id="err-name"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="err-phone">
+              <span class="error" id="err-phone"></span>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="date">Fecha</label>
+                <input id="date" name="date" type="date" aria-describedby="err-date">
+                <span class="error" id="err-date"></span>
+              </div>
+              <div class="field">
+                <label for="time">Hora</label>
+                <select id="time" name="time" disabled aria-describedby="err-time">
+                  <option value="">Elige primero la fecha</option>
+                </select>
+                <span class="error" id="err-time"></span>
+              </div>
+            </div>
+            <div class="field">
+              <label for="guests">Comensales</label>
+              <select id="guests" name="guests">
+                <option value="1">1 persona</option>
+                <option value="2" selected>2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5 personas</option>
+                <option value="6">6 personas</option>
+                <option value="7">7 personas</option>
+                <option value="8">8 personas</option>
+                <option value="9">9 personas</option>
+                <option value="10">10 personas</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Reservar mesa</button>
+            <p class="confirm" id="booking-msg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Casa Brasa. Proyecto de demostración: los platos, precios y datos de contacto son ficticios.</p>
+    <p><a href="../../index.html">Volver al portfolio</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
